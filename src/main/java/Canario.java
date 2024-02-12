@@ -1,11 +1,9 @@
-public class Canario extends Ave{
+public class Canario extends Ave implements Volar{
     @Override
     public void makeSound() {
         System.out.println("Cantar");
     }
-
-    @Override
-    public void vuelo() {
+    public void vuela() {
         System.out.println("Vuela con alas");
     }
 }
