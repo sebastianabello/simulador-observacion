@@ -1,4 +1,12 @@
 public abstract class Ave {
-    public abstract void makeSound();
+    TipoSonido tipoSonido;
+    TipoVuelo tipoVuelo;
+
+    public void realizaVuelo() {
+        tipoVuelo.vuelo();
+    }
+    public void realizaSonido() {
+        tipoSonido.makeSound();
+    }
 
 }

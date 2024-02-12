@@ -1,9 +1,12 @@
-public class Canario extends Ave implements Volar{
-    @Override
-    public void makeSound() {
-        System.out.println("Cantar");
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Canario extends Ave {
+    public static final Logger logger = LoggerFactory.getLogger(Canario.class);
+    public Canario() {
+        logger.debug("Creando canario");
+        tipoSonido = new Canto();
+        tipoVuelo = new VueloConAlas();
     }
-    public void vuela() {
-        System.out.println("Vuela con alas");
-    }
+
 }
